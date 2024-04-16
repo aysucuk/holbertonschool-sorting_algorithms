@@ -1,5 +1,9 @@
 #include "sort.h"
 
+/**
+ * insertion_sort_list - implementation of insertion sorting algorithm
+ * @list: list to sort
+ */
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *temp = *list, *node = NULL;
@@ -26,4 +30,4 @@ void insertion_sort_list(listint_t **list)
 			}
 		temp = (*temp).next;
 	}
-}
+
