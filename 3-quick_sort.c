@@ -17,7 +17,7 @@ int *quick_sort_recursive(int *array, int low, int high, int size)
 		return (array);
 
 	pivot = array[high];
-	j = high;
+	j = low;
 	for (i = low; i < high; i++)
 	{
 		if (array[i] <= pivot)
@@ -32,7 +32,7 @@ int *quick_sort_recursive(int *array, int low, int high, int size)
 			j += 1;
 		}
 	}
-	if (j != low)
+	if (j != high)
 	{
 		temp = array[high];
 		array[high] = array[j];
